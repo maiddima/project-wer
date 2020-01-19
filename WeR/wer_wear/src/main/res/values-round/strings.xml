@@ -1,0 +1,4 @@
+<resources>
+    <string name="input_placeholder">Write a message</string>
+    <string name="hello_world">Hello Round World!</string>
+</resources>

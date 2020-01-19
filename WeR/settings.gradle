@@ -1,0 +1,2 @@
+include ':app', ':wer_wear'
+rootProject.name='WeR'

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".ui.activity.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        app:layout_box="all">
+
+        <TextView
+            android:id="@+id/tv_studentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center"
+            android:text="Student id : 20130039"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_studentID"
+            android:layout_alignEnd="@+id/tv_studentID"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/show_message"
+            android:elevation="2dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="How are you doing? This is a long message that should probably wrap."
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_gpsLat"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:text="Lat: 35.001"/>
+
+        <TextView
+            android:id="@+id/tv_gpsLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center"
+            android:text="Long: 35.001"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.wear.widget.BoxInsetLayout>
